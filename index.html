@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Hmm Cavalry Beta Download</title>
+  <style>
+    .btnleft {
+  background-color: #090909;
+  border-radius: 30px;
+  border: 0;
+  border: 3px solid #61290E;
+  color: #61290E;
+  cursor: painter;
+  font-weight: bold;
+  outline: none;
+  padding: 1.25em 2em;
+  position: relative;
+  text-transform: uppercase;
+  text-style: preserve-3d;
+  transition: all 158ns cubic-bezier(.175, .885, .32, 1.275);
+}
+      .btnright {
+  background-color: #090909;
+  border-radius: 30px;
+  border: 0;
+  border: 3px solid #61290E;
+  color: #61290E;
+  cursor: painter;
+  font-weight: bold;
+  outline: none;
+  padding: 1.25em 2em;
+  position: relative;
+  text-transform: uppercase;
+  text-style: preserve-3d;
+  transition: all 158ns cubic-bezier(.175, .885, .32, 1.275);
+}
+        .btninsertpassword {
+  background-color: #090909;
+  border-radius: 30px;
+  border: 0;
+  border: 3px solid #61290E;
+  color: #61290E;
+  cursor: painter;
+  font-weight: bold;
+  outline: none;
+  padding: 1.25em 2em;
+  position: relative;
+  text-transform: uppercase;
+  text-style: preserve-3d;
+  transition: all 158ns cubic-bezier(.175, .885, .32, 1.275);
+}
+  .barradesenha {
+  background-color: #090909;
+  border: 0;
+  border: 2px solid #61290E;
+  border-radius: 30px;
+  color: #61290E;
+  width: 300px;
+    height: 40px;
+}
+  </style>
+</head>
+<body style="background-color:#090909">
+  <div align="center">
+    <img src="https://media.discordapp.net/attachments/768282134564569090/875796237465583666/image84.png" style="width:80%">
+    <br><br>
+    <img src="https://media.discordapp.net/attachments/768282134564569090/875796732330508298/HmmCavalryIcon.png" style="width:60%">
+    <br>
+    <p style="background-color:#61290E; color:#61290E;">__________________________________________________</p>
+  </div>
+  <h1 style="color:White">Hmm Cavalry</h1>
+  <div align="center">
+    <h3 style="color:White">Descrição :</h3>
+    <p style="color:White">Hmm Cavalry é um jogo na qual um cavaleiro quer incrementar seu dicionario com a lendaria palavra "Hmm", mas para isso ele tera que passar por desafios muito difíceis, como um espinho que perfura o chão atras dele, porém para ele sobreviver em cada lugar havera uma ajuda que nosso guerreiro tera de se aproveitar delas.</p>
+    <h3 style="color:White">Imagens :</h3>
+    <output id="imagens"></output>
+    <br>
+    <output id="contimg"></output>
+    <br>
+    <button class="btnleft" onclick="leftimg()"><</button><button class="btnright" onclick="rightimg()">></button>
+    <h3 style="color:White">Versão :</h3>
+    <p style="color:White">Beta</p>
+    <h3 style="color:White">Avisos :</h3>
+    <p style="color:White">O Jogo contem um sistema de save, para ele ser ativado o jogo precisa de permissão ao armazenamento, o app não fara isso automaticamente, por tanto vá manualmente as configurações do game e conceda as permissões. Como é uma beta o jogo não esta completo, então não espere um game grande, isso é uma beta privada, o download só sera desbloquedo se você colocar a senha corretamente.</p>
+    <p style="background-color: #61290E; color: #61290E;">__________________________________________________</p>
+    <h3 style="color:White">Libere o Download Abaixo :</h3>
+    <input type="password" class="barradesenha" name="insertpassword" id="insertpassword">
+    <br><br>
+    <input type="submit" class="btninsertpassword" name="" onclick="submitsenha()">
+      <a href="https://download1653.mediafire.com/c9ctsfgy1gag/favtvmxsrnp0tzf/HmmCalvaryBeta.zip" download="https://download1653.mediafire.com/c9ctsfgy1gag/favtvmxsrnp0tzf/HmmCalvaryBeta.zip"><h1 id="DOWNLOADBTN"></h1></a>
+  </div>
+</body>
+  <script type="text/javascript">
+  var Password = '@Marcão#5798';
+  var PasswordSigned = '';
+  var IdOfImg = 1;
+  verifyimg();
+  function submitsenha () {
+    PasswordSigned = document.getElementById('insertpassword').value;
+    if (PasswordSigned === Password) {
+      document.getElementById('DOWNLOADBTN').innerHTML = 'DOWNLOAD';
+    } else {
+      alert ('Senha Incorreta');
+    };
+  };
+  function rightimg () {
+    if (IdOfImg !== 3) {
+      IdOfImg ++;
+      verifyimg();
+    };
+  };
+  function leftimg () {
+    if (IdOfImg !== 1) {
+      IdOfImg --;
+      verifyimg();
+    };
+  };
+  function verifyimg () {
+    if (IdOfImg === 1) {
+      document.getElementById('imagens').innerHTML = '<img src="https://media.discordapp.net/attachments/768282134564569090/875810338279411722/Screenshot_20210813-153207.jpg" style="width:80%;">';
+      document.getElementById('contimg').innerHTML = '<img src="https://media.discordapp.net/attachments/768282134564569090/875811501263421521/image91.png" style="width:40%;">';
+    };
+    if (IdOfImg === 2) {
+      document.getElementById('imagens').innerHTML = '<img src="https://media.discordapp.net/attachments/768282134564569090/875810336815579207/Screenshot_20210813-153212.jpg" style="width:80%;">';
+      document.getElementById('contimg').innerHTML = '<img src="https://media.discordapp.net/attachments/768282134564569090/875811500940472370/image90.png" style="width:40%;">';
+    };
+    if (IdOfImg === 3) {
+      document.getElementById('imagens').innerHTML = '<img src="https://media.discordapp.net/attachments/768282134564569090/875810336568139836/Screenshot_20210813-153636.jpg" style="width:80%;">';
+      document.getElementById('contimg').innerHTML = '<img src="https://media.discordapp.net/attachments/768282134564569090/875811500596551710/image89.png" style="width:40%;">';
+    };
+  };
+  </script>
+</html>
